@@ -36,7 +36,7 @@ main {
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1pt solid rgba(0, 0, 0 0.2); /* 1 */
+    border: 1pt solid rgba(0, 0, 0, 0.2); /* 1 */
     padding: 1rem;
     background-color:  rgb(235, 229, 229);
     color: black;
