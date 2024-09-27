@@ -1,5 +1,5 @@
 nav {
-    background-color: steelblue;
+    background-color:steelblue;
     padding: 10px;
 }
 nav a {
@@ -8,18 +8,28 @@ nav a {
     padding: 20px;
 }
 h1 {
-    color: steelblue;
+    color: black;
 }
-img {
+h2 {
+    color: black
+}
+
+/*Styles for the image in the main section */
+main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
+
+/* Styles for the paragraph elements */
 p {
-    padding: 10px;
+    padding: 0;
 }
+
+/* Styles for the main Section */
+
 main {
     max-width: 840px;
 }
@@ -28,18 +38,19 @@ aside {
     margin: 1rem;
     border: 1pt solid rgba(0, 0, 0 0.2); /* 1 */
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    background-color:  rgb(235, 229, 229);
+    color: black;
     text-align: center;
     
 }
-main img {
+aside img {
     width: 200px;
     height: auto;
 }
-p {padding: 0;}
+
+/* styles for the footer */
 footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
+    margin-top: 20px;
+    border-top: 1px solid steelblue;
     text-align: center;
 }
