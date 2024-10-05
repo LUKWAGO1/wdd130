@@ -1,125 +1,125 @@
 section h2{
-    color: coral;
+  color: coral;
 }
 
 nav {
-  display: flex;
-  justify-content: flex-end;
-  background-color: var(--nav-background-color);
-  font-size: 1.2rem;
+display: flex;
+justify-content: flex-end;
+background-color: var(--nav-background-color);
+font-size: 1.2rem;
 }
 
 nav a {
-  display: block;
-  color: var(--nav-link-color);
-  text-decoration: none;
-  padding: 1rem;
-  border: 2px solid var(--primary-color); /* Adds a border around the menu */
-  border-radius: 10px; /* Optional: adds rounded corners */
+display: block;
+color: var(--nav-link-color);
+text-decoration: none;
+padding: 1rem;
+border: 2px solid var(--primary-color); /* Adds a border around the menu */
+border-radius: 10px; /* Optional: adds rounded corners */
 }
 
 nav a:link, nav a:visited {
-  color: var(--nav-link-color);
+color: var(--nav-link-color);
 }
 
 nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
+color: var(--nav-hover-link-color);
+background-color: var(--nav-hover-background-color);
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-  }
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
 
-  /* Headings */
+/* Headings */
 h1, h2, h3{
-    color: var(--primary-color);
-  }
+  color: var(--primary-color);
+}
 
-  h1 {
-    font-size: 36px;
-    text-align: center;
-  }
+h1 {
+  font-size: 36px;
+  text-align: center;
+}
 
-  /* Paragraphs */
+/* Paragraphs */
 p {
-    font-size: 18px;
-    margin-inline-end: 20px;
-  }
+  font-size: 18px;
+  margin-inline-end: 20px;
+}
 
-  /* Social Media Links */
+/* Social Media Links */
 .social-media-links a {
-    text-decoration: none;
-    color: var(--secondary-color);
-  }
-  
-  /* Page Width */
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  text-decoration: none;
+  color: var(--secondary-color);
+}
 
-  /* Hero Container */
+/* Page Width */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Container */
 .hero {
-    position: relative;
-    background-image: url(/wwr/images/toughraft.jpg);
-    background-size: cover;
-    height: 500px;
-    background-position: center;
-    background-size: cover;
-    display: block;
-  }
-  
-  .hero h1 {
-    position: absolute;
-    top: -0%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 48px;
-    color: white;
-    margin: 20px;
-    border-radius: 5px;
-    background-color: black;
-    
-  }
+  position: relative;
+  background-image: url(/wwr/images/toughraft.jpg);
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  display: block;
+}
 
+.hero h1 {
+  position: absolute;
+  top: -0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: white;
+  margin: 20px;
+  border-radius: 5px;
+  background-color: black;
   
+}
+
+
 .hero article {
-    position: absolute;
-    bottom: 100px;
-    left: 1px;
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 0px;
-    border-radius: 30px;
-  }
-  
-  .hero article img {
-    float: right;
-    margin: 5px;
-    width: 90px;
-  }
-  
-  
+  position: absolute;
+  bottom: 100px;
+  left: 1px;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0px;
+  border-radius: 30px;
+}
+
 .hero article img {
-    float: right;
-    margin: 10px;
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .hero article p {
-    font-size: 18px;
-    margin-bottom: 15px;
-    right: 40px;
-  }
+  float: right;
+  margin: 5px;
+  width: 90px;
+}
+
+
+.hero article img {
+  float: right;
+  margin: 10px;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero article p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  right: 40px;
+}
 
 .nav class{
-  height: auto;
-  width: auto;
-  font-size: 48px;
+height: auto;
+width: auto;
+font-size: 48px;
 }
