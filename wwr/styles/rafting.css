@@ -2,15 +2,29 @@ section h2{
     color: coral;
 }
 
- nav ul{
-    list-style: none;
-    display: flex;
-} 
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+}
 
-nav ul li a{
-    text-decoration: none;
-    color: blue;
-    right: 47%;
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+  border: 2px solid var(--primary-color); /* Adds a border around the menu */
+  border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 body {
