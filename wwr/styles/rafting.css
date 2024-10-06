@@ -1,4 +1,32 @@
-/* General Styles */
+section h2{
+  color: coral;
+}
+
+nav {
+display: flex;
+justify-content: flex-end;
+background-color: var(--nav-background-color);
+font-size: 1.2rem;
+}
+
+nav a {
+display: block;
+color: var(--nav-link-color);
+text-decoration: none;
+padding: 1rem;
+border: 2px solid var(--primary-color); /* Adds a border around the menu */
+border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+nav a:link, nav a:visited {
+color: var(--nav-link-color);
+}
+
+nav a:hover {
+color: var(--nav-hover-link-color);
+background-color: var(--nav-hover-background-color);
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -7,7 +35,7 @@ body {
 }
 
 /* Headings */
-h1, h2, h3 {
+h1, h2, h3{
   color: var(--primary-color);
 }
 
@@ -16,40 +44,10 @@ h1 {
   text-align: center;
 }
 
-h2 {
-  color: coral; /* Specific style for h2 */
-}
-
 /* Paragraphs */
 p {
   font-size: 18px;
   margin-inline-end: 20px;
-}
-
-/* Navigation */
-nav {
-  display: flex;
-  justify-content: flex-end;
-  background-color: var(--nav-background-color);
-  font-size: 1.2rem;
-}
-
-nav a {
-  display: block;
-  color: var(--nav-link-color);
-  text-decoration: none;
-  padding: 1rem;
-  border: 2px solid var(--primary-color); /* Adds a border around the menu */
-  border-radius: 10px; /* Optional: adds rounded corners */
-}
-
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
 }
 
 /* Social Media Links */
@@ -72,11 +70,13 @@ nav a:hover {
   background-size: cover;
   height: 500px;
   background-position: center;
+  background-size: cover;
+  display: block;
 }
 
 .hero h1 {
   position: absolute;
-  top: 50%;
+  top: -0%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 48px;
@@ -84,7 +84,9 @@ nav a:hover {
   margin: 20px;
   border-radius: 5px;
   background-color: black;
+  
 }
+
 
 .hero article {
   position: absolute;
@@ -97,6 +99,13 @@ nav a:hover {
 
 .hero article img {
   float: right;
+  margin: 5px;
+  width: 90px;
+}
+
+
+.hero article img {
+  float: right;
   margin: 10px;
   width: 200px;
   height: auto;
@@ -106,31 +115,11 @@ nav a:hover {
 .hero article p {
   font-size: 18px;
   margin-bottom: 15px;
+  right: 40px;
 }
 
-/* Navigation Class */
-.nav-class {
-  height: auto;
-  width: auto;
-  font-size: 48px;
-}
-
-/* Class Selectors */
-.box {
-  /* Add your styles here */
-}
-
-/* Main Image Float */
-main img {
-  float: right;
-}
-
-/* Aside Position */
-aside {
-  position: relative;
-}
-
-/* Aside h2 Position */
-aside h2 {
-  position: absolute;
+.nav class{
+height: auto;
+width: auto;
+font-size: 48px;
 }
