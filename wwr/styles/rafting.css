@@ -46,7 +46,7 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-  background-image: url(../images/speed-boats.jpg);
+  background-image: url(../images/speed-boats-min.jpg);
   padding: 40px;
   text-align: center;
 }
@@ -161,11 +161,31 @@ footer p {
 /* Class Selector for box */
 .box {
   padding: 20px;
-  background-color: #e8eaf6;
+  background-color: #e8eaf6; /* Light background for contrast */
   border: 1px solid #ccc;
   border-radius: 5px;
   margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  width: 100%; /* Ensures the box stretches to full width */
+  overflow: hidden; /* Prevents content from spilling out */
 }
+
+.box h2 {
+  font-size: 1.5em;
+  color: #3f51b5;
+  margin-bottom: 1px;
+  clear: both; /* Ensures proper positioning of the heading */
+}
+
+.box p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 30px; /* Adds space between text and heading */
+  text-align: justify; /* Aligns the text for a neat appearance */
+}
+
+
 
 /* Universal Selector */
 /* 
@@ -192,4 +212,5 @@ aside {
 /* The h2 inside the aside is absolutely positioned */
 aside h2 {
   position: absolute;
+  top: auto;
 }
