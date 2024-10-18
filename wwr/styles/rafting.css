@@ -79,7 +79,7 @@ nav {
 .hero {
     position: relative;
     height: 60vh;
-    min-height: 450px;
+    min-height: 440px;
     overflow: hidden;
     text-align: center;
     background-image: url('../images/whiteyellow.jpg');
