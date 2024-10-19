@@ -1,7 +1,7 @@
 /*CSS for Rafting Website*/
 
 :root {
-    --primary-color: #082030;     /* Light blue */
+    --primary-color: #072133;     /* Light blue */
     --secondary-color: #2ecc71;   /* Green */
     --accent1-color: #e74c3c;     /* Red */
     --accent2-color: #5e3b04;     /* Orange */
@@ -160,32 +160,34 @@ section {
     transform: scale(1.05);
 }
 
-/* Footer styles */
 footer {
-    background-color: var(--primary-color);
-    color: white;
-    text-align: center;
-    padding: 1rem;
+    margin-top: 20px;
+    border-top: 1px solid steelblue;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #082030;
 }
 
-.sociallinks {
-    margin-bottom: 1rem;
+footer .copyright {
+    flex-grow: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer .sociallinks {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
 }
 
 .sociallinks a {
-    text-decoration: none;
-    margin: 0 0.5rem;
-    display: inline-block;
+    margin: 0 10px;
 }
 
 .sociallinks img {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease;
-}
-
-.sociallinks img:hover {
-    transform: scale(1.1);
+    width: 30px;
+    height: 30px;
 }
 
 /* Responsive adjustments */
@@ -199,4 +201,15 @@ footer {
         display: block;
         margin: 0 auto 1rem;
     }
+}
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.history-image img {
+    max-width: 100%;
+    height: auto;
 }
