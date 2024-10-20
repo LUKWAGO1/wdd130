@@ -38,27 +38,38 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: var(--primary-color);
     padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border: 2px solid #ccc;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+        "logo nav";
+    align-items: center;
 }
 
 /* Style for the logo inside the header */
 header img.logo {
-    border: 1px solid #ffffff; /* White border for better contrast */
+    grid-area: logo;
+    border: 1px solid #ffffff;
     padding: 5px;
     border-radius: 5px;
     max-width: 100px;
     height: auto;
 }
 
+/* Nav styles */
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 /* Style for the navigation links */
-header nav a {
+nav a {
     margin: 0 10px;
     padding: 5px 10px;
-    border: 1px solid #ffffff; /* White border for better contrast */
+    border: 1px solid #ffffff;
     border-radius: 5px;
     text-decoration: none;
     color: #ffffff;
@@ -66,13 +77,9 @@ header nav a {
 }
 
 /* Add hover effect on navigation links */
-header nav a:hover {
+nav a:hover {
     background-color: #ffffff;
     color: var(--primary-color);
-}
-
-nav {
-    text-align: center;
 }
 
 /* Hero section styles */
@@ -100,7 +107,7 @@ nav {
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
 
@@ -109,7 +116,7 @@ nav {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.74); /* More opaque for better readability */
+    background-color: rgba(255, 255, 255, 0.74);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
@@ -131,7 +138,7 @@ main {
 
 .box {
     background-color: var(--accent2-color);
-    color: #ffffff; /* Ensuring text is visible on colored background */
+    color: #ffffff;
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -166,7 +173,7 @@ footer {
     display: flex;
     align-items: center;
     padding: 10px 20px;
-    background-color: #082030;
+    background-color: #072133; 
 }
 
 footer .copyright {
@@ -192,6 +199,18 @@ footer .sociallinks {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
+    header {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "logo"
+            "nav";
+    }
+
+    nav {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
     .hero h1 {
         font-size: 2rem;
     }
@@ -203,13 +222,29 @@ footer .sociallinks {
     }
 }
 .history {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 2rem;
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.history-image img {
-    max-width: 100%;
-    height: auto;
+.history h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: left;
+}
+
+.history-content img, .history-content p {
+    width: 30%;
+    margin: 0 20px;
+    border-radius: 10px;
 }
