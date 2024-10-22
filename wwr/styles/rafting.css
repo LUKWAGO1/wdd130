@@ -368,15 +368,14 @@ button[type="submit"]:hover {
     background-color: var(--accent1-color);
 }
 
-/* Wireframe link in footer */
-footer a[href$="contact-wireframe.png"] {
-    color: var(--nav-link-color);
-    text-decoration: underline;
-    margin-left: 1rem;
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
-footer a[href$="contact-wireframe.png"]:hover {
-    color: var(--nav-hover-link-color);
+footer a:hover {
+    color: gold;
+    text-decoration: underline;
 }
 
 /* Responsive adjustments */
