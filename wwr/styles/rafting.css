@@ -138,12 +138,21 @@ main {
 }
 
 .box {
-    background-color: var(--accent2-color);
-    color: #ffffff;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    background-color:#5e3b04;   /* Dark background to contrast with white text */
+    padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: white;  /* Makes all text white by default */
+}
+
+.box h2 {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.box p {
+    color: white;
+    line-height: 1.6;
 }
 
 section {
@@ -333,6 +342,46 @@ textarea {
     border: 1px solid var(--accent1-color);
     border-radius: 5px;
 }
+/* Container styling */
+.newsletter-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    float: left;
+    width: 100%;
+}
+
+/* Checkbox styling */
+.newsletter-container input[type="checkbox"] {
+    float: left;
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Label styling */
+.newsletter-container label {
+    font-size: 16px;
+    line-height: 1.4;
+    cursor: pointer;
+    color: #ffffff;
+    margin-left: 5px;
+}
+
+/* Hover states */
+.newsletter-container input[type="checkbox"]:hover,
+.newsletter-container label:hover {
+    cursor: pointer;
+}
+
+/* Focus state for accessibility */
+.newsletter-container input[type="checkbox"]:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
+
 
 fieldset {
     border: none;
@@ -609,10 +658,14 @@ nav a:hover {
 
 /* Testimonial Section */
 .testimonial-carousel {
-    padding: 2rem;
+    padding: 2rem;    
     background-color: var(--paragraph-background-color);
     color: var(--paragraph-color-on-color);
     overflow: hidden;
+}
+
+.testimonial-carousel h2 {
+    color: white;
 }
 
 .testimonial-container {
@@ -718,7 +771,7 @@ footer {
 }
 
 #subscriber-count {
-    color: #2196F3;
+    color: #072133;
     font-weight: 700;
     font-size: 1.8rem;
     margin-left: 5px;
@@ -729,7 +782,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #90e0ef;
+    background-color:  #333;
     background-image: url(../images/hero-image.png);
     background-position: center;
     background-size: cover;
@@ -757,7 +810,7 @@ footer {
     margin: 10px;
     border-radius: 5px;
     font-size: 40px;
-    background-color: rgba(72, 202, 228, 0.8); /* Darker overlay for readability */
+    background-color: rgba(72, 202, 228, 0.247); /* Darker overlay for readability */
     white-space: nowrap;
 }
 
@@ -805,7 +858,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #90e0ef;
+    background-color: #90e1ef29;
     background-image: url(../images/happy-client.png);
     background-position: center;
     background-size: cover;
@@ -833,24 +886,26 @@ footer {
  }
  
  .great-content h1 {
-    color: #ffffff;
+    color:#ddd;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     line-height: 1.2;
     margin-top: -1rem;
+    background-color: #000;
  }
  
  .great-content h2 {
-    color: #e2e8f0;
+    color:#FFFFCC;
     font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    margin-top: 2rem;
     line-height: 1.3;
  }
  
  .great-content p {
-    color: #ffffff;
+    color: gold;
     font-size: 1.25rem;
     margin-bottom: 2rem;
     line-height: 1.6;
@@ -871,7 +926,7 @@ footer {
  
  .great-content .button {
     /* Button styling */
-    display: inline-block;
+    display: inline-block;  
     padding: 1rem 2rem;
     background-color: #ffffff;
     color: #0d2850; /* Darker blue text on white button */
@@ -908,4 +963,223 @@ main {
 
 section {
     margin-bottom: 40px;
+}
+/* Trips Page Specific Styles */
+/* Hero Section Styles */
+.hero4 {
+    position: relative;
+    height: 80vh;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/trips-hero.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero4 .hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 2rem;
+    background-color: rgba(7, 33, 51, 0.7); /* Using your primary color with transparency */
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 20px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero4 h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero4 p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+.hero4 .button {
+    background-color: #165f35; /* Using your secondary color */
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.hero4 .button:hover {
+    background-color: #1a7641; /* Slightly lighter shade for hover */
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero4 .button:active {
+    transform: translateY(-1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero4 h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero4 p {
+        font-size: 1.2rem;
+    }
+
+    .hero4 .button {
+        padding: 0.8rem 1.6rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero4 h1 {
+        font-size: 2rem;
+    }
+
+    .hero4 p {
+        font-size: 1rem;
+    }
+
+    .hero4 .button {
+        padding: 0.7rem 1.4rem;
+        font-size: 0.9rem;
+    }
+
+    .hero4 .hero-content {
+        padding: 1.5rem;
+    }
+}
+.featured-trips {
+    padding: 40px 0;
+}
+
+.trip-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.trip-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.trip-card:hover {
+    transform: translateY(-10px);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.trip-content {
+    padding: 20px;
+}
+
+.trip-content h3 {
+    color: var #ffffff;
+    margin-bottom: 10px;
+}
+
+.difficulty {
+    color: #232324;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.trip-details {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.trip-details li {
+    margin: 8px 0;
+    color: #444;
+}
+
+.table-container {
+    overflow-x: auto;
+    margin: 20px 0;
+    background: rgb(238, 245, 244);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #023e8a; /* Kept primary color but ensuring it's the darker shade */
+    color: #ffffff; /* Pure white for maximum contrast */
+}
+
+tr:hover {
+    background-color: #1aaf968f; /* Darker hover background for better contrast */
+}
+
+.limited,
+.booking-fast,
+.available  {
+    color: #023834; /* Darker red for better contrast */
+}
+
+.trip-cta {
+    background-color: var(--accent2-color);
+    padding: 60px 20px;
+    text-align: center;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+
+.cta-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    margin-bottom: 30px;
+    color: #ffffff;
 }
